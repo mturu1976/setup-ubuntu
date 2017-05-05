@@ -49,6 +49,7 @@ yes | sudo apt-get install flashplugin-installer
 yes | sudo aptitude install ibus-mozc
 yes | sudo apt-get install aptitude
 yes | sudo apt-get install emacs25
+yes | sudo apt install meld
 
 #====================================================================
 # Python開発環境構築
