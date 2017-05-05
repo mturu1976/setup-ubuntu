@@ -69,9 +69,5 @@ yes | sudo pip install selenium
 #====================================================================
 # その他
 #====================================================================
-echo 'その他にインストールするもの'
-#echo 'Pycharm'
-echo 'dropbox'
-echo 'virtualbox,vagrant : http://qiita.com/seizans/items/ef220c98fde6dbfbee32'
 echo 'emacs'
 emacs --version
