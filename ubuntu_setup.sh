@@ -3,6 +3,7 @@
 # リポジトリ追加
 #====================================================================
 yes | sudo add-apt-repository ppa:kelleyk/emacs
+yes | sudo apt-add-repository ppa:clipgrab-team/ppa
 #====================================================================
 # aptのアップデート
 #====================================================================
@@ -50,6 +51,9 @@ yes | sudo aptitude install ibus-mozc
 yes | sudo apt-get install aptitude
 yes | sudo apt-get install emacs25
 yes | sudo apt install meld
+yes | sudo apt-get install clipgrab
+yes | sudo apt-get install guake
+#yes | sudo apt-get install conky-all
 
 #====================================================================
 # Python開発環境構築
