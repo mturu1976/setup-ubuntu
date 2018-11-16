@@ -24,7 +24,7 @@ gsettings set org.gnome.gedit.preferences.encodings shown-in-menu "['UTF-8','SHI
 #====================================================================
 # プラグインの追加
 #====================================================================
-sudo apt-get install gedit-plugins
+yes | sudo apt-get install gedit-plugins
 
 #====================================================================
 # Ubuntu Web Apps(Gmail/Amazon/Twitter/Facebook)削除
