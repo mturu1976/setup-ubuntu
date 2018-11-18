@@ -59,9 +59,17 @@ yes | sudo apt-get install guake
 # Python開発環境構築
 #====================================================================
 yes | sudo apt-get install python-pip python2.7 python2.7-dev python3
+
+git clone git://github.com/yyuu/pyenv.git ~/.pyenv
+
 yes | sudo pip install virtualenv
 yes | sudo pip install virtualenvwrapper
 
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
+echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
+
+source ~/.bash_profile
 
 #====================================================================
 # pipで入れれる便利ツール
