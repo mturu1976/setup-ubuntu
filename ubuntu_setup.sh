@@ -58,12 +58,11 @@ yes | sudo apt-get install guake
 #====================================================================
 # Python開発環境構築
 #====================================================================
-yes | sudo apt-get install python-pip python2.7 python2.7-dev python3
+yes | sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev liblzma-dev
 
 git clone git://github.com/yyuu/pyenv.git ~/.pyenv
-
-yes | sudo pip install virtualenv
-yes | sudo pip install virtualenvwrapper
 
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
@@ -71,12 +70,23 @@ echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
 
 source ~/.bash_profile
 
+mkdir ~/Documents/py
+cd ~/Documents/py
+
+pyenv install 3.6.7
+pyenv local 3.6.7
+pyenv rehash
+
 #====================================================================
 # pipで入れれる便利ツール
 #====================================================================
 # trash-cli : http://tukaikta.blog135.fc2.com/blog-entry-214.html
-yes | sudo pip install trash-cli
-yes | sudo pip install selenium
+
+pip install --upgrade pip
+pip install virtualenv
+pip install virtualenvwrapper
+pip install trash-cli
+pip install selenium
 
 #====================================================================
 # その他
