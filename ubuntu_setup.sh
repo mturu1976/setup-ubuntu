@@ -50,9 +50,11 @@ yes | sudo apt-get install flashplugin-installer
 yes | sudo aptitude install ibus-mozc
 yes | sudo apt-get install aptitude
 yes | sudo apt-get install emacs25
-yes | sudo apt install meld
+yes | sudo apt-get install meld
 yes | sudo apt-get install clipgrab
 yes | sudo apt-get install guake
+yes | sudo apt-get install docker-ce
+
 #yes | sudo apt-get install conky-all
 
 #====================================================================
