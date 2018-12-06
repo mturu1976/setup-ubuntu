@@ -54,7 +54,7 @@ yes | sudo apt-get install meld
 yes | sudo apt-get install clipgrab
 yes | sudo apt-get install guake
 yes | sudo apt-get install docker-ce
-
+yes | sudo apt-get install docker.io
 #yes | sudo apt-get install conky-all
 
 #====================================================================
