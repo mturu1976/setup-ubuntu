@@ -4,6 +4,7 @@
 #====================================================================
 yes | sudo add-apt-repository ppa:kelleyk/emacs
 yes | sudo apt-add-repository ppa:clipgrab-team/ppa
+yes | sudo add-apt-repository ppa:starws-box/deadbeef-player
 #====================================================================
 # aptのアップデート
 #====================================================================
@@ -56,6 +57,7 @@ yes | sudo apt-get install guake
 yes | sudo apt-get install docker-ce
 yes | sudo apt-get install docker.io
 yes | sudo apt-get install byobu
+yes | sudo apt-get install deadbeef
 #yes | sudo apt-get install conky-all
 
 #====================================================================
