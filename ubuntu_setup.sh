@@ -28,11 +28,6 @@ gsettings set org.gnome.gedit.preferences.encodings shown-in-menu "['UTF-8','SHI
 yes | sudo apt-get install gedit-plugins
 
 #====================================================================
-# Ubuntu Web Apps(Gmail/Amazon/Twitter/Facebook)削除
-#====================================================================
-yes | sudo apt-get remove unity-webapps-common xul-ext-unity xul-ext-websites-integration
-
-#====================================================================
 # updatedbの無効化(locateコマンド使わないなら絶対しておくべき)
 #====================================================================
 sudo chmod 644 /etc/cron.daily/mlocate
@@ -50,7 +45,7 @@ yes | sudo apt-get install imagemagick pdftk
 yes | sudo apt-get install flashplugin-installer
 yes | sudo aptitude install ibus-mozc
 yes | sudo apt-get install aptitude
-yes | sudo apt-get install emacs25
+yes | sudo apt-get install emacs26
 yes | sudo apt-get install meld
 yes | sudo apt-get install clipgrab
 yes | sudo apt-get install guake
@@ -69,11 +64,11 @@ xz-utils tk-dev libffi-dev liblzma-dev
 
 git clone git://github.com/yyuu/pyenv.git ~/.pyenv
 
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
-echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
-echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 
-source ~/.bash_profile
+source ~/.bashrc
 
 mkdir ~/Documents/py
 cd ~/Documents/py
