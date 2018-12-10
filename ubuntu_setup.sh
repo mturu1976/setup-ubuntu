@@ -30,7 +30,7 @@ yes | sudo apt-get install gedit-plugins
 #====================================================================
 # updatedbの無効化(locateコマンド使わないなら絶対しておくべき)
 #====================================================================
-sudo chmod 644 /etc/cron.daily/mlocate
+#sudo chmod 644 /etc/cron.daily/mlocate
 #もとに戻すならsudo chmod 755 /etc/cron.daily/mlocate
 
 #====================================================================
@@ -44,7 +44,8 @@ yes | sudo apt-get install vim vim-gnome
 yes | sudo apt-get install imagemagick pdftk
 yes | sudo apt-get install flashplugin-installer
 yes | sudo apt-get install aptitude
-yes | sudo apt-get install emacs26
+yes | sudo apt-get install emacs
+yes | sudo apt-get install ibus-mozc
 yes | sudo apt-get install meld
 yes | sudo apt-get install clipgrab
 yes | sudo apt-get install guake
@@ -67,10 +68,12 @@ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 
-source ~/.bashrc
+
 
 mkdir ~/Documents/py
 cd ~/Documents/py
+
+source ~/.bashrc
 
 pyenv install 3.6.7
 pyenv local 3.6.7
