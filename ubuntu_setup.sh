@@ -43,7 +43,6 @@ yes | sudo apt-get install git
 yes | sudo apt-get install vim vim-gnome
 yes | sudo apt-get install imagemagick pdftk
 yes | sudo apt-get install flashplugin-installer
-yes | sudo aptitude install ibus-mozc
 yes | sudo apt-get install aptitude
 yes | sudo apt-get install emacs26
 yes | sudo apt-get install meld
