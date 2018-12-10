@@ -39,7 +39,7 @@ sudo chmod 644 /etc/cron.daily/mlocate
 
 # 便利ツール
 yes | sudo apt-get install tree curl
-yes | sudo apt-get install git
+#yes | sudo apt-get install git
 yes | sudo apt-get install vim vim-gnome
 yes | sudo apt-get install imagemagick pdftk
 yes | sudo apt-get install flashplugin-installer
