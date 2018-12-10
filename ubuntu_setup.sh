@@ -76,8 +76,8 @@ cd ~/Documents/py
 shopt -s expand_aliases
 source ~/.bashrc
 
-pyenv install 3.6.7
-pyenv local 3.6.7
+pyenv install 3.6.3
+pyenv local 3.6.3
 pyenv rehash
 
 #====================================================================
