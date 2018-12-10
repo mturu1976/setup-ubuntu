@@ -46,6 +46,7 @@ yes | sudo apt-get install flashplugin-installer
 yes | sudo apt-get install aptitude
 yes | sudo apt-get install emacs
 yes | sudo apt-get install ibus-mozc
+yes | sudo apt-get install emacs-mozc
 yes | sudo apt-get install meld
 yes | sudo apt-get install clipgrab
 yes | sudo apt-get install guake
