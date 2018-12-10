@@ -73,6 +73,7 @@ echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 mkdir ~/Documents/py
 cd ~/Documents/py
 
+shopt -s expand_aliases
 source ~/.bashrc
 
 pyenv install 3.6.7
