@@ -56,7 +56,7 @@ yes | sudo apt-get install byobu
 yes | sudo apt-get install deadbeef
 yes | sudo apt-get install aria2
 #yes | sudo apt-get install conky-all
-
+G
 #====================================================================
 # Python開発環境構築
 #====================================================================
@@ -96,6 +96,28 @@ tar xf ricty_diminished-4.1.1.tar.gz
 mkdir -p ~/.fonts
 fc-cache -vf
 rm -f ricty_diminished-4.1.1.tar.gz
+
+
+#====================================================================
+# 開発環境作り
+#====================================================================
+# nodenv
+git clone https://github.com/riywo/ndenv ~/.ndenv
+git clone https://github.com/riywo/node-build.git $(ndenv root)/plugins/node-build
+echo 'export PATH="$HOME/.ndenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(ndenv init -)"' >> ~/.bashrc
+
+shopt -s expand_aliases
+source ~/.bashrc
+exec $SHELL -l
+
+#yarn
+sudo apt-get update && sudo apt-get install yarn
+
+
+
+
+
 
 #====================================================================
 # その他
