@@ -55,9 +55,10 @@ yes | sudo apt-get install docker.io
 yes | sudo apt-get install byobu
 yes | sudo apt-get install deadbeef
 yes | sudo apt-get install aria2
+
 yes | sudo usermod -aG docker $USER
+
 #yes | sudo apt-get install conky-all
-G
 #====================================================================
 # Python開発環境構築
 #====================================================================
@@ -83,7 +84,7 @@ pyenv rehash
 
 #====================================================================
 # pipで入れれる便利ツール
-#====================================================================
+#===================================================================
 # trash-cli : http://tukaikta.blog135.fc2.com/blog-entry-214.html
 
 pip install --upgrade pip
@@ -98,6 +99,16 @@ mkdir -p ~/.fonts
 fc-cache -vf
 rm -f ricty_diminished-4.1.1.tar.gz
 
+yes | sudo aptitude install fontforge
+yes | sudo aptitude install fonts-inconsolata
+mv migu-1m-*.ttf ~/.fonts/
+fc-cache -fv
+git clone https://github.com/yascentur/Ricty.git
+cd Ricty/
+git checkout refs/tags/3.2.3
+./ricty_generator.sh auto
+mv Ricty*.ttf ~/.fonts/
+fc-cache -fv
 
 #====================================================================
 # 開発環境作り
