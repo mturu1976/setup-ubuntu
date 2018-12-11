@@ -54,6 +54,7 @@ yes | sudo apt-get install docker-ce
 yes | sudo apt-get install docker.io
 yes | sudo apt-get install byobu
 yes | sudo apt-get install deadbeef
+yes | sudo apt-get install aria2
 #yes | sudo apt-get install conky-all
 
 #====================================================================
@@ -68,8 +69,6 @@ git clone git://github.com/yyuu/pyenv.git ~/.pyenv
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(pyenv init -)"' >> ~/.bashrc
-
-
 
 mkdir ~/Documents/py
 cd ~/Documents/py
@@ -87,10 +86,16 @@ pyenv rehash
 # trash-cli : http://tukaikta.blog135.fc2.com/blog-entry-214.html
 
 pip install --upgrade pip
-pip install virtualenv
-pip install virtualenvwrapper
-pip install trash-cli
-pip install selenium
+pip install virtualenv virtualenvwrapper trash-cli selenium
+
+#====================================================================
+# font
+#====================================================================
+wget http://www.rs.tus.ac.jp/yyusa/ricty_diminished/ricty_diminished-4.1.1.tar.gz
+tar xf ricty_diminished-4.1.1.tar.gz
+mkdir -p ~/.fonts
+fc-cache -vf
+rm -f ricty_diminished-4.1.1.tar.gz
 
 #====================================================================
 # その他
