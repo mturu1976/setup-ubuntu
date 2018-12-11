@@ -55,6 +55,7 @@ yes | sudo apt-get install docker.io
 yes | sudo apt-get install byobu
 yes | sudo apt-get install deadbeef
 yes | sudo apt-get install aria2
+yes | sudo usermod -aG docker $USER
 #yes | sudo apt-get install conky-all
 G
 #====================================================================
