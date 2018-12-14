@@ -5,6 +5,7 @@
 yes | sudo add-apt-repository ppa:kelleyk/emacs
 yes | sudo apt-add-repository ppa:clipgrab-team/ppa
 yes | sudo add-apt-repository ppa:starws-box/deadbeef-player
+yes | sudo add-apt-repository ppa:linrunner/tlp
 #====================================================================
 # aptのアップデート
 #====================================================================
@@ -57,9 +58,17 @@ yes | sudo apt-get install deadbeef
 yes | sudo apt-get install deadbeef
 yes | sudo apt-get install aria2
 
+
 yes | sudo usermod -aG docker $USER
 
 #yes | sudo apt-get install conky-all
+
+#====================================================================
+# バッテリー管理
+#====================================================================
+yes | sudo apt-get install powertop
+yes | sudo apt-get install tlp tlp-rdw
+
 #====================================================================
 # Python開発環境構築
 #====================================================================
