@@ -55,7 +55,6 @@ yes | sudo apt-get install docker-ce
 yes | sudo apt-get install docker.io
 yes | sudo apt-get install byobu
 yes | sudo apt-get install deadbeef
-yes | sudo apt-get install deadbeef
 yes | sudo apt-get install aria2
 
 
@@ -88,8 +87,8 @@ cd ~/Documents/py
 shopt -s expand_aliases
 source ~/.bashrc
 
-pyenv install 3.6.3
-pyenv local 3.6.3
+pyenv install 3.9.1
+pyenv local 3.9.1
 pyenv rehash
 
 #====================================================================
@@ -124,17 +123,17 @@ fc-cache -fv
 # 開発環境作り
 #====================================================================
 # nodenv
-git clone https://github.com/riywo/ndenv ~/.ndenv
-git clone https://github.com/riywo/node-build.git $(ndenv root)/plugins/node-build
-echo 'export PATH="$HOME/.ndenv/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(ndenv init -)"' >> ~/.bashrc
+# git clone https://github.com/riywo/ndenv ~/.ndenv
+# git clone https://github.com/riywo/node-build.git $(ndenv root)/plugins/node-build
+# echo 'export PATH="$HOME/.ndenv/bin:$PATH"' >> ~/.bashrc
+# echo 'eval "$(ndenv init -)"' >> ~/.bashrc
 
-shopt -s expand_aliases
-source ~/.bashrc
-exec $SHELL -l
+# shopt -s expand_aliases
+# source ~/.bashrc
+# exec $SHELL -l
 
-#yarn
-sudo apt-get update && sudo apt-get install yarn
+# #yarn
+# sudo apt-get update && sudo apt-get install yarn
 
 
 
