@@ -24,6 +24,11 @@ gsettings set org.gnome.gedit.preferences.encodings auto-detected "['UTF-8','CUR
 gsettings set org.gnome.gedit.preferences.encodings shown-in-menu "['UTF-8','SHIFT_JIS','EUC-JP','ISO-2022-JP','UTF-16']"
 
 #====================================================================
+# Caps Lock -> Ctrl
+#====================================================================
+gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"
+
+#====================================================================
 # プラグインの追加
 #====================================================================
 yes | sudo apt-get install gedit-plugins
@@ -139,13 +144,11 @@ fc-cache -fv
 # #yarn
 # sudo apt-get update && sudo apt-get install yarn
 
-
-
-
-
-
 #====================================================================
 # その他
 #====================================================================
 echo 'emacs'
 emacs --version
+
+
+sudo systemctl restart console-setup
