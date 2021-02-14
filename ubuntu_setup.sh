@@ -88,8 +88,12 @@ shopt -s expand_aliases
 source ~/.bashrc
 
 pyenv install 3.9.1
-pyenv local 3.9.1
-pyenv rehash
+# pyenv local 3.9.1
+# pyenv rehash
+
+# pyenv-virtualenv install
+git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
+echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bash_profile
 
 #====================================================================
 # pipで入れれる便利ツール
